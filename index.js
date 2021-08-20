@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// Since the nested function is inside the function myFunction, it allows access to anything that is in that function. A function can look up to a function if its inside it, however it can't look down inside another function. 
 
 
 
@@ -28,11 +28,15 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(n) {
+  let sum = 0;
+  for(let i = 0; i <= n; i++){
+    sum += i;
+  } 
+  return sum;
 
   }
- 
+console.log(summation(4));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -56,10 +60,17 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(data){
+    const displayNames = [];
+    data.forEach(function(item){
+      
+       displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
+    })
+    console.log(displayNames);
+    return displayNames;
+    
   }
-  
+ 
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
