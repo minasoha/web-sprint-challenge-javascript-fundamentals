@@ -59,7 +59,6 @@ const zooAnimals = [
   Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
-
   function animalNames(data){
     const displayNames = [];
     data.forEach(function(item){
@@ -225,7 +224,6 @@ const cuboidTwo = new CuboidMakerTwo({
   width: 5,
   height: 5
 });
-
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 console.log(cuboidTwo.volume()); // 100

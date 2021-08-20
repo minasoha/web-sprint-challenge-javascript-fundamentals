@@ -25,17 +25,35 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+
 .map creates a new array and populates from running a function on every element in the array. A use case would be to extract a sub-property in an array.  
 .reduce it returns a single value and it does not make a new array. It is used for multiplication and addition. A use case would be summing all the values on an array.
 .filter it executes a function on each element of an array which returns true or false. If it is true it will be included in a new array, if its false it will not be included. A use case would be to remove repeated values. 
 
 2. Explain the difference between a callback and a higher order function.
 
+Callback function is passed as an argument to another function with the expectation to be called later. A higher order function is a function that accepts functions as parameters and returns a function. 
+
+
 3. Explain what a closure is.
+
+A closure is when an inner function reaches out of its scope to grab a variable defined in an outer function.
 
 4. Describe the four principles of the 'this' keyword.
 
+Window binding - If we don't give 'this' any context it will return to the global object.
+
+Implicit binding - looks at the left of the dot, that's what 'this' refers to.
+
+Explicit binding - 'this' keyword should be using .call .bind .apply. .call will immediately invoke the function and pass it in your arguments 1 by 1. .apply will immediately invoke the function and pass your arguments as an array. .bind passes your arguments 1 by 1 but it will not invoke the function immediately. 
+
+New binding - is when a function is invoked with a new keyword, 'this' will bound the new object that is created. 
+
+
 5. Why do we need super() in an extended class?
+
+It tells the class to inherit from the parent. 
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
